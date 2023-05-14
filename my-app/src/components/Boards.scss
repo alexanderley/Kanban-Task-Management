@@ -1,0 +1,11 @@
+.boards {
+  box-sizing: border-box;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: var(--second-background-color);
+  display: flex;
+  gap: 25px;
+  padding: 25px;
+}

@@ -1,0 +1,76 @@
+nav {
+  //   background-color: beige;
+  z-index: 10;
+  border-bottom: 2px solid var(--line-color);
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  .logoContainer {
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+    height: 100%;
+    align-items: center;
+    width: 300px;
+    border-right: 2px solid var(--line-color);
+    background-color: var(--background-color);
+  }
+  .addNewTaskContainer {
+    padding-left: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+
+    .addNewTaskButtonContainer {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      position: relative;
+
+      .editBoardDropDownMenu {
+        cursor: default;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--second-background-color);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        right: 0;
+        top: 55px;
+        color: var(--medium-grey);
+
+        span {
+          cursor: pointer;
+          user-select: none;
+        }
+
+        span:first-child {
+          margin-bottom: 15px;
+        }
+
+        .deleteBoard {
+          color: var(--red);
+        }
+      }
+    }
+  }
+  .dotContainer {
+    width: 30px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    transition: all 0.3s;
+  }
+
+  .dotContainer:hover {
+    cursor: pointer;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+.addNewTaskModalContainer {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    button:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}

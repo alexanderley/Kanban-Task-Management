@@ -1,0 +1,17 @@
+.editBoardModalContainer {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    margin-top: 5px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .editBoardForm {
+    display: flex;
+    flex-direction: column;
+  }
+}

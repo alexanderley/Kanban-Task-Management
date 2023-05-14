@@ -1,0 +1,74 @@
+.board {
+  min-width: 280px;
+  transition: opacity 0.3s;
+}
+
+.boardTitleContainer {
+  display: flex;
+  margin-bottom: 25px;
+  .taskDot {
+    display: inline-block;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    // background-color: #49c4e5;
+    border-radius: 10px;
+  }
+  .taskDotColor1 {
+    background-color: #49c4e5;
+  }
+  .taskDotColor2 {
+    background-color: #8471f2;
+  }
+  .taskDotColor3 {
+    background-color: #67e2ae;
+  }
+  .taskDotColor4 {
+    background-color: #e5a449;
+  }
+  .taskDotColor5 {
+    background-color: #3849ca;
+  }
+  .taskDotColor6 {
+    background-color: #d66b44;
+  }
+
+  .taskTitle {
+    text-transform: uppercase;
+  }
+}
+
+.taskContainer {
+  margin-bottom: 20px;
+  transition: opacity 0.3s;
+  .task {
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    padding: 25px 15px;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+  }
+
+  .subTask {
+    color: var(--medium-grey);
+  }
+
+  .task {
+    cursor: pointer;
+  }
+}
+
+.taskContainer:hover {
+  opacity: 0.5;
+}
+
+.taskContainer:last-child {
+  margin-bottom: 0;
+}
+
+.dashedBorder {
+  // height: 100%;
+  height: calc(100% - 40px);
+  border: 2px dashed rgba(130, 143, 163, 0.4);
+  border-radius: 5px;
+}

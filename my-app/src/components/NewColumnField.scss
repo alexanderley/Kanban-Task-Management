@@ -1,0 +1,26 @@
+.newColumnContainer {
+  background: linear-gradient(
+    to bottom,
+    rgba(121, 132, 147, 0.2),
+    rgba(130, 143, 163, 0.1),
+    rgba(130, 143, 163, 0)
+  );
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 40px;
+  min-width: 280px;
+  h1 {
+    color: var(--medium-grey);
+  }
+}
+
+.newColumnContainer:hover {
+  h1 {
+    color: var(--violet);
+    cursor: pointer;
+  }
+}

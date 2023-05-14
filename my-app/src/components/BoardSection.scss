@@ -1,0 +1,44 @@
+.boardsContainer {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: var(--second-background-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  // Only when the board is empty !
+  // justify-content: center;
+  // align-items: center;
+
+  // When Board has content
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  // overflow-y: auto;
+  .boardsContent {
+    display: flex;
+    justify-content: center;
+
+    left: 300px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transition: left 0.3s;
+    overflow-y: auto;
+  }
+
+  .boardsMoveLeft {
+    left: 0;
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.boardsContainer .grabbing {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}

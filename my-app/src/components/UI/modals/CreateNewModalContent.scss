@@ -1,0 +1,21 @@
+.createNewBoardModalContainer {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  label {
+    margin-bottom: 10px;
+  }
+  form {
+    label {
+      margin-bottom: 10px;
+    }
+  }
+
+  input {
+    width: 100%;
+    margin-top: 5px;
+  }
+}

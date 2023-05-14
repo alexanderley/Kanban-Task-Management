@@ -1,0 +1,19 @@
+.newInputContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+
+  input {
+    margin-bottom: 0;
+    width: 95%;
+    box-sizing: border-box;
+  }
+  svg {
+    margin-left: 20px;
+  }
+  svg:hover {
+    cursor: pointer;
+  }
+}

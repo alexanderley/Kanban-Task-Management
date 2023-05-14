@@ -1,0 +1,213 @@
+:root {
+  /* Colors */
+  --violet: #635fc7;
+  --light-violet: #a8a4ff;
+  --very-light-violet: #f0effa;
+  --red: #ea5555;
+  --red-hover: #ff9898;
+
+  /* Black and whites */
+  --black: #000112;
+  --very-dark-grey: #20212c; /* Dark background */
+  --dark-grey: #2b2c37;
+  --lines-dark: #3e3f4e;
+  --medium-grey: #828fa3;
+  --lines-light: #e4ebfa;
+  --background-light: #f4f7fd;
+  --white: white;
+
+  /* Fonts  */
+  --font-family: "Plus Jakarta Sans", sans-serif;
+  --medium: 500;
+  --bold: 700;
+
+  // Theme
+  --background-color: var(--dark-grey);
+  --second-background-color: var(--very-dark-grey);
+  --line-color: var(--lines-dark);
+  --color: white;
+
+  --buttonSecondaryBackgroundColor: var(--white);
+  --buttonSecondaryColor: var(--violet);
+
+  --line-thickness: 1px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--color);
+  overflow-x: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: var(--bold);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading XL - Bold - 24px - 30px line */
+h1 {
+  font-size: 1.5rem;
+  font-weight: var(--bold);
+  margin: 0;
+  line-height: 1.875rem;
+}
+
+/* Heading L - Bold - 18px - 23px line */
+h2 {
+  font-size: 1.125rem;
+  font-weight: var(--bold);
+  margin: 0;
+  line-height: 1.438rem;
+  margin-bottom: 20px;
+}
+
+/* Heading M - Bold - 15px - 19px line */
+h3 {
+  font-size: 0.938rem;
+  font-weight: var(--bold);
+  margin: 0;
+  line-height: 1.188rem;
+  margin-bottom: 20px;
+}
+
+.headingM {
+  font-size: 0.938rem;
+  font-weight: var(--bold);
+  margin: 0;
+  line-height: 1.188rem;
+}
+
+/* Heading S - Bold - 12px - 15px line */
+h4 {
+  font-size: 0.75rem;
+  font-weight: var(--bold);
+  color: var(--medium-grey);
+  letter-spacing: 2.4px;
+  margin: 0;
+  line-height: 0.938rem;
+}
+
+.headingS {
+  font-size: 0.75rem;
+  font-weight: var(--bold);
+  color: var(--medium-grey);
+  letter-spacing: 2.4px;
+  margin: 0;
+  line-height: 0.938rem;
+}
+
+// Body M - Bold 12px - 15px Line
+.bodyM {
+  font-size: 0.75rem;
+  font-weight: var(--bold);
+  line-height: 0.938rem;
+  margin: 0;
+}
+
+// Body M - Bold 13px - 23px Line
+.bodyL {
+  font-size: 0.813rem;
+  font-weight: var(--medium);
+  line-height: 1.438rem;
+  // margin: 0;
+  color: var(--medium-grey);
+}
+
+p {
+  margin-bottom: 35px;
+}
+
+label {
+  font-size: 0.75rem;
+}
+
+input {
+  background: none;
+  border: var(--line-thickness) solid var(--line-color);
+  color: var(--color);
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  outline: 1px solid var(--violet);
+}
+
+select {
+  background: none;
+  border: var(--line-thickness) solid var(--line-color);
+  color: var(--color);
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+select:focus {
+  outline: 1px solid var(--violet);
+}
+
+select:after {
+  background-color: #ea5555;
+  outline: yellow;
+}
+
+option {
+  background-color: var(--background-color);
+  padding: 25px;
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* width */
+// Scrollbar
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  background: var(--second-background-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--medium-grey);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--violet);
+}
