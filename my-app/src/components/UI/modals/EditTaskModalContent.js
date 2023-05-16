@@ -12,7 +12,7 @@ export default function EditTaskFormModalContent() {
   const handleChange = () => {};
 
   const handleCheckboxChange = () => {
-    console.log('EditTaskModalContent');
+    console.log("EditTaskModalContent");
   };
 
   return (
@@ -24,11 +24,13 @@ export default function EditTaskFormModalContent() {
         <div className="checkBoxesContainer">
           {activeTask.subtasks.map((subtask, index) => (
             <Checkbox
-            key={index}
+              key={index}
               type="checkbox"
+              index={index}
               // id="checkboxField"
+              id={subtask.id ? subtask.id : ""}
               name={subtask.name ? subtask.name : ""}
-              done={subtask.done ? subtask.done : ""}
+              done={subtask.done ? subtask.done : false}
               onChange={handleCheckboxChange}
             />
           ))}

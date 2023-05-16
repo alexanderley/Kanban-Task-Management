@@ -6,9 +6,12 @@ export const TaskContext = createContext();
 export function TaskProvider({ children }) {
   const { boards, activeBoard } = useContext(BoardContext);
   const [activeTask, setActiveTask] = useState({
+    stepName: "",
+    stepId: "",
+    stepIndex: "",
     step: "",
-    id: "",
     index: "",
+    id: "",
     name: "",
     description: "",
     subtasks: [],

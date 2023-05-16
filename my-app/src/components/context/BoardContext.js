@@ -308,9 +308,9 @@ export const BoardProvider = ({ children }) => {
     },
   ]);
 
-  // useEffect(() => {
-  //   console.log("BoardsContex.js:", boards);
-  // }, [boards]);
+  useEffect(() => {
+    console.log("BoardsContex.js:", boards);
+  }, [boards]);
 
   let initialActiveBoard = "";
   if (boards.length !== 0) {
