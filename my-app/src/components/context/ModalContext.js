@@ -19,6 +19,8 @@ export const ModalProvider = ({ children }) => {
 
   const [editTaskFormIsVisible, setEditTaskFormIsVisible] = useState(false);
 
+  const [dropDownModalIsVisible, setDropDownModalIsVisible] = useState(false);
+
   return (
     <ModalContext.Provider
       value={{
@@ -34,6 +36,8 @@ export const ModalProvider = ({ children }) => {
         setEditBoardFormIsVisible,
         editTaskFormIsVisible,
         setEditTaskFormIsVisible,
+        dropDownModalIsVisible,
+        setDropDownModalIsVisible,
       }}
     >
       {children}

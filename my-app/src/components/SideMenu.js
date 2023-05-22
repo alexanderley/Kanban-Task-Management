@@ -7,6 +7,7 @@ import { ReactComponent as ShowSidebar } from "../img/icon-show-sidebar.svg";
 import ThemeChanger from "./ThemeChanger";
 import BoardsSelection from "./BoardsSelection";
 import { SidebarContext } from "./context/SidebarContext";
+import BoardSelectionContent from "./BoardSelectionContent";
 
 export default function Navigation() {
   const { sidebarHidden, setSidebarHidden } = useContext(SidebarContext);

@@ -13,7 +13,7 @@ export const BoardProvider = ({ children }) => {
           name: "Todo",
           tasks: [
             {
-              id: 1,
+              id: 324324,
               name: "Plan Produc Hunt launch",
               description:
                 "This is a short description for what has to been down for this task",
@@ -25,7 +25,7 @@ export const BoardProvider = ({ children }) => {
               ],
             },
             {
-              id: 2,
+              id: 288673,
               name: "Share on Show HN",
               description:
                 "This is a short description for what has to been down for this task",
@@ -36,7 +36,7 @@ export const BoardProvider = ({ children }) => {
               ],
             },
             {
-              id: 3,
+              id: 323423,
               name: "Build UI for search",
               description:
                 "This is a short description for what has to been down for this task",
@@ -46,7 +46,12 @@ export const BoardProvider = ({ children }) => {
                 { name: "Publish post", done: false },
               ],
             },
-            { id: 4, name: "Build settings UI", description: "", subtasks: [] },
+            {
+              id: 911344,
+              name: "Build settings UI",
+              description: "",
+              subtasks: [],
+            },
           ],
         },
         {
@@ -308,9 +313,9 @@ export const BoardProvider = ({ children }) => {
     },
   ]);
 
-  useEffect(() => {
-    console.log("BoardsContex.js:", boards);
-  }, [boards]);
+  // useEffect(() => {
+  //   console.log("BoardsContex.js:", boards);
+  // }, [boards]);
 
   let initialActiveBoard = "";
   if (boards.length !== 0) {

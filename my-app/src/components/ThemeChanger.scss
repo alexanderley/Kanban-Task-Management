@@ -46,3 +46,10 @@
     transform: translateX(-100%);
   }
 }
+
+@media (max-width: 768px) {
+  .themeChanger {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}

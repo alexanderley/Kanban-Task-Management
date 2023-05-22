@@ -8,6 +8,7 @@ import { SidebarProvider } from "./components/context/SidebarContext";
 import { BoardProvider } from "./components/context/BoardContext";
 import { ModalProvider } from "./components/context/ModalContext";
 import { TaskProvider } from "./components/context/TaskContext";
+import { ViewportProvider } from "./components/context/ViewportContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,7 +18,9 @@ root.render(
         <BoardProvider>
           <ModalProvider>
             <TaskProvider>
-              <App />
+              <ViewportProvider>
+                <App />
+              </ViewportProvider>
             </TaskProvider>
           </ModalProvider>
         </BoardProvider>

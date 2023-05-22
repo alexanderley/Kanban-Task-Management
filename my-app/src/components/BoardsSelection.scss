@@ -18,7 +18,11 @@
     position: relative;
     margin-bottom: 10px;
     padding: 15px 30px;
-    left: -30px;
+    left: -35px;
+
+    width: calc(100% + 40px);
+    box-sizing: border-box;
+
     span {
       color: var(--medium-grey);
       margin-left: 15px;
@@ -41,7 +45,7 @@
     border-bottom-right-radius: 50px;
     box-sizing: border-box;
     padding: 15px 30px;
-    left: -30px;
+    left: -35px;
     cursor: pointer;
 
     span {
@@ -64,7 +68,7 @@
     border-bottom-right-radius: 50px;
     box-sizing: border-box;
     padding: 15px 30px;
-    left: -30px;
+    left: -35px;
 
     span {
       color: white;

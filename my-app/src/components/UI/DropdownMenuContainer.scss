@@ -1,0 +1,28 @@
+.dropdownMenu {
+  cursor: default;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--second-background-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  color: var(--medium-grey);
+
+  // position: absolute;
+  // right: 0;
+  // top: 55px;
+
+  span {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  span:first-child {
+    margin-bottom: 15px;
+  }
+
+  .deleteBoard {
+    color: var(--red);
+  }
+}
